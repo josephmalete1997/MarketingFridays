@@ -1,0 +1,89 @@
+footer {
+  width: 95%;
+  margin-left: 2.5%;
+  display: flex;
+  height: 20em;
+  padding-top: 10em;
+  padding-bottom: 10em;
+}
+
+footer div {
+  flex: 1;
+  margin: 0.5em;
+}
+
+footer div:nth-child(1) {
+  flex: 1;
+  padding-left: 0em;
+}
+
+footer div:nth-child(2) {
+  flex: 1;
+  padding-left: 1em;
+}
+
+footer div:nth-child(3) {
+  flex: 1;
+  padding-right: 0em;
+}
+
+footer div p {
+  font-size: 1.2em;
+}
+
+footer div form {
+  display: flex;
+  flex-direction: column;
+}
+
+footer div form input,
+label {
+  font-size: 1.2em;
+  margin: 0.5em 0rem;
+}
+
+footer div form input[type="submit"] {
+  width: 50%;
+}
+
+footer div form label {
+  font-size: 1.2em;
+  margin: 0.2em 0rem 0rem 0rem;
+  font-family: Montserrat-normal;
+}
+
+footer div .icons {
+  display: flex;
+  margin-left: 0em;
+  padding: 0em;
+  width: 7em;
+}
+
+footer div .icons a {
+  width: 2rem;
+  height: 2rem;
+  margin: 0.5rem;
+}
+
+footer div .icons a:nth-child(1) {
+  margin-left: 0rem;
+}
+
+footer div .icons a:nth-child(1) {
+  width: 1.3rem;
+}
+footer div .icons a:nth-child(2) {
+  width: 1.9rem;
+}
+footer div .icons a:nth-child(3) {
+  width: 2.1rem;
+}
+
+footer div p a {
+  color: black;
+}
+
+.copy-right,
+.current-year {
+  font-family: Montserrat-normal;
+}

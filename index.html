@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/font.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/scroller.css" />
+    <link rel="stylesheet" href="css/events.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/scroll_style.css" />
+    <link rel="stylesheet" href="./Montserrat/static/Montserrat-ExtraLight.ttf" />
+    <link rel="shortcut icon" href="images/logo.png" />
+    <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" /> -->
+    <title>Marketing Fridays | Home</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo"></div>
+      <div class="nav">
+        <a href="/" class="active">Home</a>
+        <a href="About/">About</a>
+        <a href="Events/">Events</a>
+        <a href="Articles/">Articles</a>
+        <a href="Gallery/">Gallery</a>
+        <a href="Contact/">Contact</a>
+      </div>
+      <div class="icons">
+        <a href="#a"><img src="icons/facebook-f.svg" alt="facebook icon" /></a>
+        <a href="#a"><img src="icons/instagram.svg" alt="instagram icon" /></a>
+        <a href="#a"><img src="icons/x-twitter.svg" alt="x-twitter icon" /></a>
+      </div>
+    </header>
+    <main>
+      <h1>Welcome to <b>Marketing Fridays</b></h1>
+      <div class="image-scroller"></div>
+      <div class="home-p">
+        <p>
+          Marketing Fridays was launched in April 2018, to address a unique need for marketing
+          professionals to learn from one another and get an opportunity to network. The reality is
+          that there are not a lot of platforms for us to share ideas and just get to know each
+          other within the industry. There has been a few movements that have really progressed over
+          the last few years, but we need as many platforms and voices advocating for Marketing
+          excellence and for us to pay if forward as we broaden access to Marketing.
+          <br /><br />Hence on the first Friday of every month, Marketing Fridays invites you to
+          join other practicing marketing professionals in Johannesburg for coffee, light breakfast
+          and an insightful special guest address in a setting that affords you a chance to
+          establish invaluable contact with other marketing professionals and enhance your
+          understanding on Marketing.
+        </p>
+        <div class="next-event"></div>
+      </div>
+    </main>
+    <footer>
+      <div>
+        <h1>Subscribe</h1>
+        <p>
+          Sign up with your email address to receive updates on our events and content around
+          Marketing
+        </p>
+        <form>
+          <label> First and last names </label>
+          <input type="text" name="names" required />
+          <label> Email Address </label>
+          <input type="text" name="email" required />
+          <input type="submit" class="button" value="Sign Up" />
+        </form>
+        <p>We respect your privacy</p>
+      </div>
+      <div>
+        <h1>Where to find us</h1>
+        <p>
+          22nd Floor South Point Towers<br />41 De Korte Street<br />
+          Braamfontein, South Africa <br /><br />Telephone: +27(0)11 242 8637 <br />Email:
+          nyiko@marketingfridays.com
+        </p>
+      </div>
+      <div>
+        <h1>Follow us on Social media</h1>
+        <div class="icons">
+          <a href="#a"><img src="icons/facebook-f.svg" alt="facebook icon" /></a>
+          <a href="#a"><img src="icons/instagram.svg" alt="instagram icon" /></a>
+          <a href="#a"><img src="icons/x-twitter.svg" alt="x-twitter icon" /></a>
+        </div>
+        <p>
+          <a href="Contact/">Get In Touch with us</a>
+        </p>
+        <p><a href="Articles/">Read Marketing Articles</a></p>
+        <p><a href="404/">Our Podcast</a></p>
+        <p class="copy-right">
+          Copyright &copy;<span class="current-year"></span> Marketing Fridays
+        </p>
+      </div>
+    </footer>
+    <script>
+      function getCurrentYear() {
+        const currentYear = document.querySelector(".current-year");
+        currentYear.innerHTML = new Date().getFullYear();
+      }
+
+      getCurrentYear();
+    </script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

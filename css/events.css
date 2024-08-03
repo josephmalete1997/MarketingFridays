@@ -1,0 +1,62 @@
+.home-p .next-event {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  margin: 1.5em 0em 0em 2em;
+  background: white;
+}
+
+.home-p .next-event h2 {
+  margin: 0em;
+  margin-bottom: 1em;
+}
+
+.next-event-main {
+  display: flex;
+  margin: 0em;
+}
+
+.next-event-image {
+  flex: 1;
+  /* background-image: url(../displayImages/Invite+28+August+2020.jpg); */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.next-event-right {
+  width: 5rem;
+  height: 10rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 0.5em;
+}
+
+.button {
+  background: black;
+  color: white;
+  font-size: 1.2rem;
+  border: 2px solid black;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  font-family: Montserrat-normal;
+}
+
+.button:hover {
+  background: white;
+  color: rgb(0, 0, 0);
+}
+
+.view {
+  background: rgb(255, 255, 255);
+  color: rgb(3, 3, 3);
+  font-size: 1.2rem;
+  border: 2px solid black;
+  margin-top: 1rem;
+}
+
+.view:hover {
+  background: black;
+  color: white;
+}
