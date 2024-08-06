@@ -57,8 +57,8 @@ main p {
 }
 
 .pop-up-image-scroll {
-  width: 60vw;
-  height: 80vh;
+  width: 80vw;
+  height: 90vh;
   background: white;
   background-position: center;
   background-repeat: no-repeat;
@@ -89,16 +89,17 @@ main p {
   position: absolute;
   cursor: pointer;
   padding: 6em 4em;
-  opacity: 0.1;
+  opacity: 0.3;
   transition: 0.2s;
   z-index: 100;
 }
 
 .right {
-  right: 2em;
+  right: 0.2em;
 }
+
 .left {
-  left: 2em;
+  left: 0.2em;
 }
 
 .right:hover,
