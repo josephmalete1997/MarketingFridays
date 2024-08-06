@@ -12,10 +12,10 @@ Inexperience when applied properly in the context of asking and trying to figure
     author: "Nyiko Chauke",
     comment: [
       {
-        name: "",
-        comment: "",
-        date: "",
-        time: "",
+        name: "Joseph Malete",
+        comment: "nice article, i like it",
+        date: "12/16/2020",
+        time: "10:00",
       },
     ],
   },
@@ -40,13 +40,6 @@ Getting this right means;
 Let’s fix the error of our ways and get back to the basics when it comes to Marketing. `,
     date: "11/12/2020",
     author: "Nyiko Chauke",
-    comment: [
-      {
-        name: "",
-        comment: "",
-        date: "",
-        time: "",
-      },
-    ],
+    comment: [],
   },
 ];
