@@ -63,7 +63,7 @@ currentPageDescription.innerHTML = `Page 1 of ${pages.value}`;
 
 function activePage() {
   const page = document.querySelectorAll(".page");
-
+  page[0].classList.add("active-page");
   page.forEach((page, index) => {
     page.addEventListener("click", () => {
       clearActiveStatus();
