@@ -9,15 +9,20 @@
 @font-face {
   font-family: "Montserrat-light";
   font-style: normal;
-  src: local("Montserrat-ExtraLight"),
-    url(../Montserrat/static/Montserrat-Light.ttf) format("truetype");
+  src: local("Montserrat-Light"), url(../Montserrat/static/Montserrat-Light.ttf) format("truetype");
 }
 
 @font-face {
   font-family: "Montserrat-normal";
   font-style: normal;
-  src: local("Montserrat-ExtraLight"),
+  src: local("Montserrat-Medium"),
     url(../Montserrat/static/Montserrat-Medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat-bold";
+  font-style: normal;
+  src: local("Montserrat-Bold"), url(../Montserrat/static/Montserrat-Bold.ttf) format("truetype");
 }
 
 * {

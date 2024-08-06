@@ -1,0 +1,34 @@
+.google-reviews h1 {
+  margin-left: 5%;
+}
+
+.reviews {
+  display: flex;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 90%;
+  margin-left: 5%;
+  border-bottom: 0.1em solid;
+  padding: 1em 0em;
+}
+
+.review {
+  flex: 0 0 auto;
+  width: 100%;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.review-text h2 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.review-text p {
+  font-size: 1.5em;
+}
+
+.rating {
+  font-weight: bold;
+  margin-top: 10px;
+}
