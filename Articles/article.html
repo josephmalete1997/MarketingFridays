@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./Montserrat/static/Montserrat-ExtraLight.ttf" />
     <link rel="shortcut icon" href="../images/logo.png" />
     <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" /> -->
-    <title></title>
+    <title>Articles | marketing Fridays</title>
   </head>
   <body>
     <div class="over-layer"></div>
@@ -36,12 +36,10 @@
       </div>
     </header>
     <main>
-      <h1>Marketing thoughts | <b>By Nyiko Chauke</b></h1>
-      <div class="marketing-thoughts"></div>
+      <h1 class="current-title"></h1>
+      <div class="date-author"></div>
+      <p class="current-content"></p>
     </main>
-    <div class="pages-section"><p>Pages</p>
-      <div class="pagination"></div>
-    </div>
     <footer>
       <div>
         <h1>Subscribe</h1>
@@ -90,8 +88,44 @@
       }
       getCurrentYear();
     </script>
+    <style>
+      main {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+      main h1 {
+        font-family: Montserrat-Normal;
+      }
+      main p {
+        width: 90%;
+        font-family: Montserrat-Light;
+        font-size: 1.4em;
+      }
+
+      main p li {
+        font-family: Montserrat-Light;
+        list-style: circle;
+      }
+      .date-author {
+        display: flex;
+        font-size: 1.3em;
+        text-align: left;
+      }
+    </style>
     <script src="svgs.js"></script>
     <script src="article_object.js"></script>
     <script src="articles.js"></script>
+    <script>
+      const currentTitle = document.querySelector(".current-title");
+      const content = document.querySelector(".current-content");
+      const dateAuthor = document.querySelector(".date-author");
+      const article = JSON.parse(localStorage.getItem("current-article"));
+      currentTitle.innerHTML = article.title;
+      const newArticle = article.content.replace(/·/g, "<li>").replace(/\n\n/g, "<br><br>");
+      content.innerHTML = newArticle;
+      dateAuthor.innerHTML = `${article.date} | By _<b>${article.author}</b>`;
+      document.title = article.title;
+    </script>
   </body>
 </html>

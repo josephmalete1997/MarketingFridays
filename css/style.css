@@ -3,6 +3,9 @@ body {
   width: 100%;
   font-family: "Montserrat";
   cursor: default;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 header {

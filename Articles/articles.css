@@ -1,0 +1,66 @@
+main h1 {
+  margin-left: 1em;
+}
+
+.marketing-thoughts {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.article {
+  width: 45%;
+  margin: 1em 2.5%;
+  height: 40em;
+  display: flex;
+  flex-direction: column;
+}
+
+.article-image {
+  width: 100%;
+  height: 25em;
+  background: red;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.article-date {
+  font-family: "Montserrat-Light";
+  letter-spacing: 2px;
+}
+
+.article-title {
+  font-family: "Montserrat-Normal";
+  font-size: 1.2em;
+  cursor: pointer;
+}
+.article-title:hover {
+  color: rgb(73, 132, 221);
+  text-decoration: underline;
+}
+
+.pagination {
+  display: flex;
+}
+
+.page {
+  background: white;
+  color: black;
+  width: 2em;
+  height: 2em;
+  border: 2px solid black;
+  margin: 0.1em;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat-Normal";
+  font-size: 1em;
+  padding: 0em;
+}
+
+.active-page {
+  background: black;
+  color: white;
+}
