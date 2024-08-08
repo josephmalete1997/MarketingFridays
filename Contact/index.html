@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="../css/scroller.css" />
     <link rel="stylesheet" href="../css/events.css" />
     <link rel="stylesheet" href="../css/footer.css" />
-    <link rel="stylesheet" href="./articles.css" />
+    <link rel="stylesheet" href="./contact.css" />
     <link rel="stylesheet" href="../css/scroll_style.css" />
     <link rel="stylesheet" href="./Montserrat/static/Montserrat-ExtraLight.ttf" />
     <link rel="shortcut icon" href="../images/logo.png" />
     <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" /> -->
-    <title>Articles | marketing Fridays</title>
+    <title>Contact | Marketing Fridays</title>
   </head>
   <body>
     <div class="over-layer"></div>
@@ -23,9 +23,9 @@
         <a href="/">Home</a>
         <a href="../About/">About</a>
         <a href="../Events/">Events</a>
-        <a href="" class="active">Articles</a>
+        <a href="../Articles/">Articles</a>
         <a href="../Gallery/">Gallery</a>
-        <a href="../Contact/">Contact</a>
+        <a href="" class="active">Contact</a>
       </div>
       <div class="icons">
         <a href="#a"><img src="../icons/facebook-f.svg" alt="facebook icon" /></a>
@@ -36,18 +36,48 @@
       </div>
     </header>
     <main>
-      <h1 class="current-title"></h1>
-      <div class="date-author"></div>
-      <p class="current-content"></p>
-
-      <div class="comment-area">
-        <form>
-          <h2>Comments (<span id="number-of-comments"></span>)</h2>
-          <textarea name="comment" required></textarea>
-          <input type="submit" class="button" value="Post Comment" />
-        </form>
-        <div class="comments"></div>
+      <h1>Get In Touch</h1>
+      <div class="contact-image"></div>
+      <div class="text">
+        At Marketing Fridays, we are always looking for interesting topics or guests to invite to
+        our sessions. If you would like to contribute or recommend,
+        <b>please fill in details on form</b>
       </div>
+      <form>
+        <div class="name-panel">
+          <div>
+            <label>First name(s) <span class="required">(required)</span></label
+            ><br />
+            <input type="text" name="first_name" required />
+          </div>
+          <div>
+            <label>Last name <span class="required">(required)</span></label
+            ><br />
+            <input type="text" name="last_name" required />
+          </div>
+        </div>
+        <label>Email Address <span class="required">(required)</span></label>
+        <input type="email" name="email" required />
+        <label>Areas Of Interest<br /><span class="required">Select All That Apply.</span></label>
+        <div class="check-button">
+          <input type="checkbox" name="Like to contribute on topic / Guest" id="a" /><label for="a"
+            >Like to contribute on topic / Guest</label
+          >
+        </div>
+        <div class="check-button">
+          <input type="checkbox" name="Want to volunteers services" id="b" /><label for="b"
+            >Want to volunteers services</label
+          >
+        </div>
+        <div class="check-button">
+          <input type="checkbox" name="Find out about next event" id="c" /><label for="c"
+            >Find out about next event</label
+          >
+        </div>
+        <label>Message <span class="required">(required)</span></label>
+        <textarea name="Message" required></textarea>
+        <input type="submit" class="button" value="Submit" />
+      </form>
     </main>
     <footer>
       <div>
@@ -97,63 +127,7 @@
       }
       getCurrentYear();
     </script>
-    <style>
-      main {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-      }
-      main h1 {
-        font-family: Montserrat-Normal;
-      }
-      main p {
-        width: 90%;
-        font-family: Montserrat-light;
-        font-size: 1.3em;
-      }
-
-      main p li {
-        font-family: Montserrat-Light;
-        list-style: circle;
-      }
-      .date-author {
-        display: flex;
-        font-size: 1.1em;
-        text-align: left;
-      }
-    </style>
     <script src="svgs.js"></script>
-    <script src="article_object.js"></script>
-    <script src="articles.js"></script>
-    <script>
-      const currentTitle = document.querySelector(".current-title");
-      const content = document.querySelector(".current-content");
-      const dateAuthor = document.querySelector(".date-author");
-      const comments = document.querySelector(".comments");
-
-      const article = JSON.parse(localStorage.getItem("current-article"));
-      currentTitle.innerHTML = article.title;
-      const newArticle = article.content.replace(/·/g, "<li>").replace(/\n\n/g, "<br><br>");
-      content.innerHTML = newArticle;
-      dateAuthor.innerHTML = `${article.date} | By _<b>${article.author}</b>`;
-      document.title = article.title;
-
-      const userIcon = `
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width=".9em"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc. --><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"/></svg>`;
-
-      article.comment.forEach((comment) => {
-        const commentDiv = document.createElement("div");
-        commentDiv.classList.add("comment");
-        commentDiv.innerHTML = `
-        <h2>${userIcon} ${comment.name}</h2>
-        <p>${comment.comment}</p>
-        <button class="reply button" >Reply</button>
-        <hr>
-        `;
-        comments.append(commentDiv);
-      });
-
-      document.getElementById("number-of-comments").innerHTML = ` ${article.comment.length} `;
-    </script>
+    <script src="contact.js"></script>
   </body>
 </html>

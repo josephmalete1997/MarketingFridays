@@ -6,7 +6,7 @@
 .text-image p {
   flex: 1;
   text-align: justify;
-  margin: 0em 1em;
+  margin: 0em 0em;
 }
 
 .text-image .about-image {
@@ -14,7 +14,7 @@
   background-image: url(../displayImages/_MG_8850.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover;margin: 0em 1em;
 }
 
 main p {

@@ -2,7 +2,7 @@ const container = document.querySelector(".marketing-thoughts");
 const pagination = document.querySelector(".pagination");
 const currentPageDescription = document.querySelector(".pages-section p");
 
-console.log(articlesArray);
+// console.log(articlesArray);
 articlesArray.forEach((item, index) => {
   const article = document.createElement("div");
   article.classList.add("article");
@@ -74,3 +74,23 @@ function activePage() {
 }
 
 activePage();
+
+fetch("./articles.json", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json", // Set the content type to JSON
+  },
+  body: JSON.stringify(articlesArray), // Convert the data to a JSON string
+})
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error("Network response was not ok");
+    }
+    return response.json(); // Parse the JSON from the response
+  })
+  .then((data) => {
+    console.log("Success:", data); // Handle the success response
+  })
+  .catch((error) => {
+    console.error("Error:", error); // Handle any errors
+  });
