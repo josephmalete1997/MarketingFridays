@@ -14,7 +14,8 @@
   background-image: url(../displayImages/_MG_8850.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;margin: 0em 1em;
+  background-size: cover;
+  margin: 0em 1em;
 }
 
 main p {
@@ -37,16 +38,18 @@ main p {
   background-size: cover;
   cursor: pointer;
 }
+
 .about-images-item:nth-child(1) {
   margin-left: 0%;
 }
+
 .about-images-item:nth-child(3) {
   margin-right: 0%;
 }
 
 .over-layer {
   position: fixed;
-  background: rgba(0, 0, 0, 0.90);
+  background: rgba(0, 0, 0, 0.9);
   width: 100vw;
   height: 100vh;
   z-index: 100;
@@ -95,11 +98,11 @@ main p {
 }
 
 .right {
-  right: 0.2em;
+  right: 1em;
 }
 
 .left {
-  left: 0.2em;
+  left: 1em;
 }
 
 .right:hover,
