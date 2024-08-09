@@ -41,12 +41,12 @@
   padding: 0.5em 1em;
   cursor: pointer;
   font-family: Montserrat-normal;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 .button:hover {
-  background: white;
-  color: rgb(0, 0, 0);
+  background: rgb(66, 66, 66);
+  border: 2px solid rgb(66, 66, 66);
 }
 
 .view {

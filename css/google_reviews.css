@@ -32,3 +32,9 @@
   font-weight: bold;
   margin-top: 10px;
 }
+
+.reviews-dots {
+  width: 100px;
+  height: 1em;
+  /* background: red; */
+}

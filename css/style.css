@@ -94,11 +94,11 @@ header .icons a:nth-child(5) {
   display: none;
 }
 
-.sub-nav::before {
+/* .sub-nav::before {
   content: "";
   width: 15em;
   height: 1em;
-}
+} */
 
 .sub-nav li {
   margin: 0.1em;
@@ -106,8 +106,7 @@ header .icons a:nth-child(5) {
 }
 
 .sub-nav li:hover {
-  background: rgb(78, 78, 78);
-  color: white;
+  color: rgb(74, 175, 214);
 }
 
 main {

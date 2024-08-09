@@ -1,4 +1,5 @@
 const reviewPanel = document.querySelector(".reviews");
+const reviewDots = document.querySelector(".reviews-dots");
 
 const reviewsArray = [
   {
