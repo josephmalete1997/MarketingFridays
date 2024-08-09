@@ -14,7 +14,7 @@ function readMore() {
   mainParagraph.innerHTML = wordsArray.join(" ") + `<span class='read-less'>Show less</span>`;
 }
 
-const nextEventImage = `url(../Events/images/Invite+28+August+2020.jpg)`;
+const nextEventImage = `url(../Events/images/Invite_28_August_2020.jpg)`;
 
 function getNextEvent() {
   const eventMain = document.createElement("div");

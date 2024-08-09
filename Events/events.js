@@ -12,7 +12,7 @@ upcomingEventImage.style.backgroundImage = `url(${upcomingEventObject.image})`;
 const eventsObject = [
   {
     title: "MarketingFridays",
-    image: "./images/invite+28+August+2020.jpg",
+    image: "./images/invite_28_August_2020.jpg",
   },
   {
     title: "MarketingFridays",
