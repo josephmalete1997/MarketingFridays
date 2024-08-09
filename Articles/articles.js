@@ -38,7 +38,8 @@ articlesArray.forEach((item, index) => {
 });
 
 const pages = {
-  value: 5,
+  value: Math.floor(articlesArray.length / 4),
+  number:1;
 };
 
 function paginate() {
