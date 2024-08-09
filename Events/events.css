@@ -1,0 +1,63 @@
+main {
+  display: flex;
+}
+
+.past-events-panel {
+  flex: 1;
+  height: 100px;
+}
+
+.upcoming-event {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.upcoming-event-image {
+  height: 80vh;
+  width: 100%;
+  margin: 0em 0em;
+  display: flex;
+  flex-wrap: wrap;
+  background-position: center;
+  background-size: cover;
+  cursor: zoom-in;
+}
+
+.event-buttons-section {
+  display: flex;
+  width: 70%;
+}
+
+.event-buttons-section .button {
+  display: flex;
+  margin: 1em;
+  width: 50%;
+}
+
+.event-buttons-section .button:nth-child(1) {
+  display: flex;
+  margin: 1em 0em;
+  width: 50%;
+}
+
+.past-events {
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  height: 90vh;
+}
+
+.past-event {
+  min-height: 20em;
+  width: 45%;
+  margin: 1% 1.5%;
+  background-position: center;
+  background-size: cover;
+  cursor: zoom-in;
+}
+
+.past-event:nth-child(1),
+.past-event:nth-child(2) {
+  margin-top: 0%;
+}

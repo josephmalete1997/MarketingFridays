@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="../css/scroller.css" />
     <link rel="stylesheet" href="../css/events.css" />
     <link rel="stylesheet" href="../css/footer.css" />
-    <link rel="stylesheet" href="./contact.css" />
+    <link rel="stylesheet" href="./events.css" />
     <link rel="stylesheet" href="../css/scroll_style.css" />
     <link rel="stylesheet" href="./Montserrat/static/Montserrat-ExtraLight.ttf" />
     <link rel="shortcut icon" href="../images/logo.png" />
     <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" /> -->
-    <title>Contact | Marketing Fridays</title>
+    <title>Events | Marketing Fridays</title>
   </head>
   <body>
     <div class="over-layer"></div>
@@ -22,10 +22,10 @@
       <div class="nav">
         <a href="/">Home</a>
         <a href="../About/">About</a>
-        <a href="../Events/">Events</a>
+        <a href="" class="active">Events</a>
         <a href="../Articles/">Articles</a>
         <a href="../Gallery/">Gallery</a>
-        <a href="" class="active">Contact</a>
+        <a href="../Contact/">Contact</a>
       </div>
       <div class="icons">
         <a href="#a"><img src="../icons/facebook-f.svg" alt="facebook icon" /></a>
@@ -36,48 +36,18 @@
       </div>
     </header>
     <main>
-      <h1>Get In Touch</h1>
-      <div class="contact-image"></div>
-      <div class="text">
-        At Marketing Fridays, we are always looking for interesting topics or guests to invite to
-        our sessions. If you would like to contribute or recommend,
-        <b>please fill in details on form</b>
+      <div class="upcoming-event">
+        <h1><b>Upcoming Event</b></h1>
+        <div class="upcoming-event-image"></div>
+        <div class="event-buttons-section">
+          <div class="button">RSVP Here</div>
+          <div class="button view">View Event</div>
+        </div>
       </div>
-      <form>
-        <div class="name-panel">
-          <div>
-            <label>First name(s) <span class="required">(required)</span></label
-            ><br />
-            <input type="text" name="first_name" required />
-          </div>
-          <div>
-            <label>Last name <span class="required">(required)</span></label
-            ><br />
-            <input type="text" name="last_name" required />
-          </div>
-        </div>
-        <label>Email Address <span class="required">(required)</span></label>
-        <input type="email" name="email" required />
-        <label>Areas Of Interest<br /><span class="required">Select All That Apply.</span></label>
-        <div class="check-button">
-          <input type="checkbox" name="Like to contribute on topic / Guest" id="a" /><label for="a"
-            >Like to contribute on topic / Guest</label
-          >
-        </div>
-        <div class="check-button">
-          <input type="checkbox" name="Want to volunteers services" id="b" /><label for="b"
-            >Want to volunteers services</label
-          >
-        </div>
-        <div class="check-button">
-          <input type="checkbox" name="Find out about next event" id="c" /><label for="c"
-            >Find out about next event</label
-          >
-        </div>
-        <label>Message <span class="required">(required)</span></label>
-        <textarea name="Message" required></textarea>
-        <input type="submit" class="button" value="Submit" />
-      </form>
+      <div class="past-events-panel">
+        <h1><b>Past Events</b></h1>
+        <div class="past-events"></div>
+      </div>
     </main>
     <footer>
       <div>
@@ -128,6 +98,6 @@
       getCurrentYear();
     </script>
     <script src="svgs.js"></script>
-    <script src="contact.js"></script>
+    <script src="events.js"></script>
   </body>
 </html>

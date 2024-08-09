@@ -7,3 +7,29 @@
   background-size: cover;
   background-position-y: 20%;
 }
+
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  min-width: 100%;
+  height: 60vh; /* Adjust as needed */
+  background-position: center;
+  background-size: cover;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}

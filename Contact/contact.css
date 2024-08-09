@@ -71,3 +71,10 @@ form input[type="submit"] {
 form textarea {
   height: 8em;
 }
+
+.contact-image {
+  width: 100%;
+  background: black;
+  height: 20em;
+  margin-bottom: 1em;background-image: ;
+}

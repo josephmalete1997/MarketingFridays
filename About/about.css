@@ -46,7 +46,7 @@ main p {
 
 .over-layer {
   position: fixed;
-  background: rgb(0, 0, 0, 0.95);
+  background: rgba(0, 0, 0, 0.90);
   width: 100vw;
   height: 100vh;
   z-index: 100;
