@@ -39,7 +39,7 @@ articlesArray.forEach((item, index) => {
 
 const pages = {
   value: Math.floor(articlesArray.length / 4),
-  number:1;
+  number: 1,
 };
 
 function paginate() {
