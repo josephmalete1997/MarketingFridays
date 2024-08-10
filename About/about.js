@@ -27,11 +27,11 @@ const imagesArray = [
     alt: `marketing Fridays images`,
   },
   {
-    src: `images/a7`,
+    src: `images/a7.jpg`,
     alt: `marketing Fridays images`,
   },
   {
-    src: `images/a8`,
+    src: `images/a8.jpg`,
     alt: `marketing Fridays images`,
   },
 ];
