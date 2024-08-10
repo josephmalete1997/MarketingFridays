@@ -1,0 +1,78 @@
+<!-- admin.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="./admin.css"> 
+  </head>
+  <body>
+    <script>
+      // Redirect to login page if not authenticated
+      const token = localStorage.getItem('token');
+      if (!token) {
+        window.location.href = 'login.html';
+      }
+    </script>
+    <div class="container">
+      <div class="menu">
+        <button onclick="showSection('articles')">Articles</button>
+        <button onclick="showSection('events')">Events</button>
+        <button onclick="showSection('images')">Images</button>
+        <button onclick="showSection('youtube')">YouTube Videos</button>
+      </div>
+
+      <div id="articles" class="section active">
+        <h2>Manage Articles</h2>
+        <div class="input-group">
+          <input type="text" id="article-title" placeholder="Title" />
+          <textarea id="article-body" placeholder="Body"></textarea>
+          <button onclick="addArticle()">Add Article</button>
+        </div>
+        <div id="articles-list">
+          <!-- Articles will be listed here -->
+        </div>
+      </div>
+
+      <div id="events" class="section">
+        <h2>Manage Events</h2>
+        <div class="input-group">
+          <input type="file" id="event-picture" accept="image/*" />
+          <input type="datetime-local" id="event-datetime" />
+          <textarea id="event-description" placeholder="Description"></textarea>
+          <input type="url" id="event-rsvp" placeholder="RSVP Link" />
+          <button onclick="addEvent()">Add Event</button>
+        </div>
+        <div id="events-list">
+          <!-- Events will be listed here -->
+        </div>
+      </div>
+
+      <div id="images" class="section">
+        <h2>Upload Images</h2>
+        <div class="input-group">
+          <input type="file" id="upload-image" accept="image/*" />
+          <button onclick="uploadImage()">Upload Image</button>
+        </div>
+        <div id="images-list">
+          <!-- Uploaded images will be listed here -->
+        </div>
+      </div>
+
+      <div id="youtube" class="section">
+        <h2>YouTube Videos</h2>
+        <div class="input-group">
+          <input type="text" id="youtube-title" placeholder="Video Title" />
+          <input type="text" id="youtube-id" placeholder="YouTube Video ID" />
+          <button onclick="addYouTubeVideo()">Add Video</button>
+        </div>
+        <div id="youtube-videos-list">
+          <!-- YouTube videos will be listed here -->
+        </div>
+      </div>
+    </div>
+
+    <script src="./admin.js"></script>
+  </body>
+</html>
