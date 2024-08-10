@@ -9,9 +9,9 @@
   margin: 0em 0em;
 }
 
-.text-image .about-image {
+.about-image {
   flex: 1;
-  background-image: url(../displayImages/_MG_8850.jpg);
+  background-image: url(images/_MG_8850.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
