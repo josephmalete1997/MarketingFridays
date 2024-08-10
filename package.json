@@ -1,4 +1,11 @@
 {
+  "name": "your-project-name",
+  "version": "1.0.0",
+  "description": "A description of your project",
+  "main": "database_config.js",
+  "scripts": {
+    "start": "node database_config.js"
+  },
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",

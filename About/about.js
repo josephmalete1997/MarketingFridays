@@ -3,35 +3,35 @@ const overLayer = document.querySelector(".over-layer");
 
 const imagesArray = [
   {
-    src: `./images/_MG_0225.jpg`,
+    src: `images/_MG_0225.jpg`,
     alt: `marketing Fridays images`,
   },
   {
-    src: `./images/_MG_0122.jpg`,
+    src: `images/_MG_0122.jpg`,
     alt: `marketing Fridays images`,
   },
   {
-    src: `./images/_MG_8872.jpg`,
+    src: `images/_MG_8872.jpg`,
     alt: `marketing Fridays images`,
   },
   {
-    src: `./images/_MG_2485.jpg`,
+    src: `images/_MG_2485.jpg`,
     alt: `marketing Fridays images`,
   },
   {
-    src: `./images/_MG_8365.jpg`,
+    src: `images/_MG_8365.jpg`,
     alt: `marketing Fridays images`,
   },
   {
-    src: `./images/_MG_8432.jpg`,
+    src: `images/_MG_8432.jpg`,
     alt: `marketing Fridays images`,
   },
   {
-    src: `./images/_MG_8432.jpg`,
+    src: `images/_MG_8432.jpg`,
     alt: `marketing Fridays images`,
   },
   {
-    src: `./images/_MG_8432.jpg`,
+    src: `images/_MG_8432.jpg`,
     alt: `marketing Fridays images`,
   },
 ];
