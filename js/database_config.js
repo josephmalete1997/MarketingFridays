@@ -1,8 +1,13 @@
+// server.js
+const express = require("express");
 const { MongoClient, ServerApiVersion } = require("mongodb");
-const uri =
-  "mongodb+srv://josephmalete75:BvIrsjvt4biE12zG@marketingfridays.x4ukwbm.mongodb.net/?retryWrites=true&w=majority&appName=MarketingFridays";
+const cors = require("cors");
+const app = express();
+const port = 3000; // Port number for your server
 
-// Create a MongoClient with a MongoClientOptions object to set the Stable API version
+// Use environment variables for sensitive information
+const uri = process.env.MONGODB_URI || "your_mongodb_connection_string_here";
+
 const client = new MongoClient(uri, {
   serverApi: {
     version: ServerApiVersion.v1,
@@ -11,16 +16,24 @@ const client = new MongoClient(uri, {
   },
 });
 
-async function run() {
+app.use(cors()); // Enable CORS
+app.use(express.json());
+
+// Route to get data from MongoDB
+app.get("/api/data", async (req, res) => {
   try {
-    // Connect the client to the server	(optional starting in v4.7)
     await client.connect();
-    // Send a ping to confirm a successful connection
-    await client.db("admin").command({ ping: 1 });
-    console.log("Pinged your deployment. You successfully connected to MongoDB!");
+    const database = client.db("your_database_name");
+    const collection = database.collection("your_collection_name");
+    const data = await collection.find({}).toArray();
+    res.json(data);
+  } catch (error) {
+    res.status(500).send("Error retrieving data");
   } finally {
-    // Ensures that the client will close when you finish/error
     await client.close();
   }
-}
-run().catch(console.dir);
+});
+
+app.listen(port, () => {
+  console.log(`Server running at http://localhost:${port}`);
+});

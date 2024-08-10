@@ -30,21 +30,13 @@ main p {
 
 .about-images-item {
   background: white;
-  width: 30%;
-  margin: 2%;
-  height: 20em;
+  width: 23%;
+  margin: 1%;
+  height: 15em;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  cursor: pointer;
-}
-
-.about-images-item:nth-child(1) {
-  margin-left: 0%;
-}
-
-.about-images-item:nth-child(3) {
-  margin-right: 0%;
+  cursor: zoom-in;
 }
 
 .over-layer {
@@ -52,7 +44,7 @@ main p {
   background: rgba(0, 0, 0, 0.9);
   width: 100vw;
   height: 100vh;
-  z-index: 100;
+  z-index: 210;
   display: none;
   align-items: center;
   justify-content: center;
@@ -61,7 +53,7 @@ main p {
 
 .pop-up-image-scroll {
   width: 80vw;
-  height: 90vh;
+  height: 100vh;
   background: white;
   background-position: center;
   background-repeat: no-repeat;

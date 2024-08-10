@@ -10,14 +10,20 @@
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/scroll_style.css" />
     <link rel="stylesheet" href="css/google_reviews.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
     <link rel="stylesheet" href="./Montserrat/static/Montserrat-ExtraLight.ttf" />
     <link rel="shortcut icon" href="images/logo.png" />
     <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" /> -->
     <title>Home | Marketing Fridays</title>
   </head>
   <body>
+    <div class="mobile-menu">
+      <img src="icons/bars.svg" width="30" />
+      <p>Home</p>
+    </div>
     <header>
       <div class="logo"></div>
+      <img src="./icons/times.svg" class="close-menu" />
       <div class="nav">
         <a href="" class="active">Home</a>
         <a href="About/">About</a>
@@ -51,14 +57,17 @@
           that there are not a lot of platforms for us to share ideas and just get to know each
           other within the industry. There has been a few movements that have really progressed over
           the last few years, but we need as many platforms and voices advocating for Marketing
-          excellence and for us to pay if forward as we broaden access to Marketing.
+          excellence and for us to pay it forward as we broaden access to Marketing.
           <br /><br />Hence on the first Friday of every month, Marketing Fridays invites you to
           join other practicing marketing professionals in Johannesburg for coffee, light breakfast
           and an insightful special guest address in a setting that affords you a chance to
           establish invaluable contact with other marketing professionals and enhance your
           understanding on Marketing.
         </p>
-        <div class="next-event"></div>
+        <div class="over-view">
+          <div class="next-event"></div>
+          <div class="latest-article"></div>
+        </div>
       </div>
       <div class="google-reviews">
         <h1><b>Reviews</b> <i>(Google)</i></h1>
@@ -115,9 +124,10 @@
 
       getCurrentYear();
     </script>
-    <script src="js/main.js"></script>
+    <script type="module" src="js/main.js"></script>
     <script src="js/google_reviews.js"></script>
     <script src="test.js"></script>
     <script src="js/scroller.js"></script>
+    <script src="js/menu.js"></script>
   </body>
 </html>

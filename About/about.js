@@ -26,6 +26,14 @@ const imagesArray = [
     src: `./images/_MG_8432.jpg`,
     alt: `marketing Fridays images`,
   },
+  {
+    src: `./images/_MG_8432.jpg`,
+    alt: `marketing Fridays images`,
+  },
+  {
+    src: `./images/_MG_8432.jpg`,
+    alt: `marketing Fridays images`,
+  },
 ];
 
 const imageObject = {
@@ -40,9 +48,6 @@ function generateImagePanels() {
   imagesArray.forEach((item, index) => {
     const imageItem = document.createElement("div");
     imageItem.classList.add("about-images-item");
-    if (index % imagesArray.length === 3) {
-      imageItem.style.marginLeft = `0%`;
-    }
     imageItem.style.backgroundImage = `url(${item.src})`;
     imageItem.addEventListener("click", () => {
       popUpScroll([item.src, index]);

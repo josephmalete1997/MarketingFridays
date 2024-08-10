@@ -1,0 +1,546 @@
+@media screen and (max-width: 600px) {
+  body {
+    margin: 0em;
+    width: 100%;
+    font-family: "Montserrat";
+    cursor: default;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-scroller {
+    height: 12em;
+    margin: 0em;
+  }
+
+  .mobile-menu {
+    width: 90%;
+    display: flex;
+    text-align: left;
+    padding: 5%;
+    margin: 0em;
+  }
+
+  .close-menu {
+    display: block;
+    top: 2em;
+    left: 2em;
+  }
+
+  .mobile-menu img {
+    cursor: pointer;
+  }
+
+  .mobile-menu p {
+    font-size: 1.5em;
+    font-family: "Montserrat-Normal";
+    padding-left: 1em;
+  }
+
+  header {
+    background: rgb(255, 255, 255);
+    height: 100vh;
+    width: 100%;
+    box-shadow: 0rem 0rem 0rem rgb(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0em;
+    display: none;
+  }
+
+  header .logo {
+    height: 5rem;
+    width: 5rem;
+    margin: 4rem;
+    background-image: url(../images/logo.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: none;
+  }
+
+  header .nav {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  header .nav a {
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 100;
+    text-decoration: none;
+    position: relative;
+    text-align: center;
+  }
+
+  header .nav a:hover .sub-nav {
+    display: flex;
+  }
+
+  header .nav a:hover {
+    color: rgb(71, 71, 71);
+  }
+
+  header .nav a.active {
+    border: 0px;
+  }
+
+  header .icons {
+    display: flex;
+    /* margin: 1rem; */
+    margin-left: 0rem;
+  }
+
+  header .icons a {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0.5rem;
+  }
+
+  header .icons a:nth-child(1) {
+    width: 1rem;
+  }
+  header .icons a:nth-child(2) {
+    width: 1.5rem;
+  }
+  header .icons a:nth-child(3) {
+    width: 1.5rem;
+  }
+  header .icons a:nth-child(4) {
+    width: 1.5rem;
+  }
+  header .icons a:nth-child(5) {
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-top: 0.8em;
+  }
+
+  .sub-nav {
+    background: rgb(255, 255, 255);
+    width: 100%;
+    position: relative;
+    /* left: -1em; */
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.1);
+    border: 0.01em solid #e2e2e2;
+    z-index: 10;
+    text-align: left;
+    display: none;
+  }
+
+  /* .sub-nav::before {
+        content: "";
+        width: 15em;
+        height: 1em;
+      } */
+
+  .sub-nav li {
+    margin: 0.1em;
+    padding: 0.5em;
+  }
+
+  .sub-nav li:hover {
+    color: rgb(74, 175, 214);
+  }
+
+  main {
+    width: 95%;
+    padding-top: 0em;
+  }
+
+  main h1 {
+    font-weight: 200;
+    margin: 0em 0em 1em 0em;
+    font-size: 1.5rem;
+  }
+
+  main p {
+    font-size: 1.2rem;
+    text-align: justify;
+  }
+
+  .home-p {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home-p p {
+    font-size: 1.2rem;
+    flex: 4;
+    text-align: justify;
+  }
+
+  .read-more,
+  .read-less {
+    color: rgb(69, 69, 194);
+    font-style: italic;
+    cursor: pointer;
+    margin-left: 0.5rem;
+  }
+
+  .read-more:hover,
+  .read-less:hover {
+    text-decoration: underline;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  footer div {
+    padding: 0em;
+    margin: 0em;
+    padding-left: 0em;
+  }
+
+  footer form input {
+    border: 0.01em solid;
+    padding: 0.3em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .home-p .next-event {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    margin: 1.5em 0em 0em 0em;
+    background: white;
+  }
+
+  .next-event-main {
+    width: 98%;
+    height: 25em;
+    flex-direction: column;
+  }
+
+  .button {
+    font-size: 1.2rem;
+    border: 2px solid black;
+    width: 100%;
+    margin-top: 0.5em;
+  }
+
+  .view {
+    background: rgb(255, 255, 255);
+    color: rgb(3, 3, 3);
+    font-size: 1.2rem;
+    border: 2px solid #000000;
+  }
+  .next-event-right {
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    margin: 0em;
+    margin-bottom: 2em;
+  }
+
+  .next-event-image {
+    flex: 3;
+    height: 20em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  footer {
+    /* text-align: center; */
+    padding: 0em 0em;
+  }
+  footer form {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .google-reviews h1 {
+    margin-left: 0%;
+    font-size: 1.5em;
+  }
+  .reviews {
+    width: 90%;
+    margin-left: 5%;
+    border: none;
+    padding: 0dvh 0em;
+  }
+
+  .text-image {
+    height: 45em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0em;
+  }
+
+  .text-image p {
+    font-size: 1.2em;
+  }
+
+  .text-image .about-image {
+    width: 100%;
+    margin: 0em;
+  }
+  .about-images {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .about-images-item {
+    background: white;
+    width: 98%;
+    height: 15em;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .pop-up-image-scroll {
+    width: 100vw;
+    height: 40vh;
+    background: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .close {
+    font-size: 1.5em;
+    position: absolute;
+    left: 0.2em;
+    top: 0.2em;
+    cursor: pointer;
+    transition: 0.2s;
+    z-index: 100;
+    padding: 1em;
+  }
+
+  .close:hover {
+    opacity: 0.5;
+    transform: scale(1.3);
+  }
+
+  .left,
+  .right {
+    font-size: 2em;
+    padding: 6em 1em;
+    opacity: 0.3;
+    transition: 0.2s;
+    z-index: 100;
+  }
+
+  .right {
+    right: 0em;
+  }
+
+  .left {
+    left: 0em;
+  }
+
+  .right:hover,
+  .left:hover {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+
+  .scroll-text {
+    font-size: 1.2em;
+    z-index: 100;
+    color: white;
+    top: -3em;
+    left: 1em;
+  }
+
+  .text-copy-right {
+    font-size: 1em;
+    bottom: -4em;
+    left: 1em;
+  }
+
+  /* Articles */
+  .marketing-thoughts {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .article {
+    width: 100%;
+    margin: 0em;
+    margin-top: 1em;
+    height: 20em;
+  }
+
+  .article-image {
+    width: 100%;
+    height: 15em;
+  }
+
+  .article-date {
+    font-family: "Montserrat-Light";
+    letter-spacing: 2px;
+  }
+
+  .article-title {
+    font-family: "Montserrat-Normal";
+    font-size: 1.1em;
+    cursor: pointer;
+  }
+}
+
+/* Events */
+@media screen and (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  .past-events {
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+    overflow-x: auto;
+    height: 20em;
+  }
+
+  .past-event {
+    height: 20em;
+    width: 90vw;
+    margin: 1% 2vw;
+  }
+  .upcoming-event {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .upcoming-event-image {
+    height: 45vh;
+    width: 100%;
+  }
+
+  .event-buttons-section {
+    display: flex;
+    width: 100%;
+  }
+
+  .event-buttons-section .button {
+    display: flex;
+    margin: 0.5em;
+    width: 95%;
+    font-size: 1em;
+  }
+
+  .event-buttons-section .button:nth-child(1) {
+    display: flex;
+    margin: 0.5em 0em;
+    width: 95%;
+  }
+
+  /* Comments */
+  .comment-area {
+    width: 100%;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .comment-area h2 {
+    font-size: 1em;
+    font-family: "Montserrat-Lighter";
+  }
+
+  .comment-area textarea {
+    width: 100%;
+    margin: 0%;
+    height: 7em;
+    font-size: 1.1em;
+  }
+
+  .comment-area input {
+    width: 100%;
+    margin-left: 0%;
+    font-size: 1.1em;
+  }
+
+  /* Contacts */
+
+  main .text {
+    font-size: 1.2em;
+    margin-bottom: 2em;
+  }
+
+  main form {
+    width: 100%;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  main form label {
+    font-family: "Montserrat-Normal";
+    font-size: 1.3em;
+  }
+
+  main form label span {
+    font-style: italic;
+    font-size: 0.9em;
+  }
+
+  main form input {
+    padding: 0.5em;
+  }
+
+  main form input[type="checkbox"] {
+    margin-left: 0%;
+  }
+
+  .check-button {
+    margin: 0.1em;
+  }
+
+  .check-button label {
+    font-family: "Montserrat-Light";
+    margin: 0.5em;
+    cursor: pointer;
+    font-size: 1.3em;
+  }
+
+  form .name-panel {
+    flex-direction: column;
+  }
+
+  form .name-panel div {
+    width: 100%;
+    margin: 0.5em 0em;
+  }
+
+  form .name-panel div input {
+    width: 95%;
+  }
+
+  form .name-panel div:nth-child(2) input {
+    width: 96%;
+  }
+
+  form input[type="submit"] {
+    width: 100%;
+    margin: 1em 0em;
+  }
+
+  form textarea {
+    height: 8em;
+  }
+
+  .contact-image {
+    width: 100%;
+    height: 13em;
+    margin-bottom: 1em;
+    background-size: cover;
+    background-position: -5em;
+  }
+}

@@ -1,18 +1,22 @@
+import { articlesArray } from "../Articles/article_object.js";
+
 const mainParagraph = document.querySelector("main p");
-const nextEvent = document.querySelector(".home-p .next-event");
-const wordsArray = mainParagraph.innerHTML.split(" ");
-function textShortener() {
-  if (wordsArray.length > 140) {
-    mainParagraph.innerHTML =
-      wordsArray.slice(0, 140).join(" ") + `<span class='read-more'>Read more</span>`;
-  }
-}
+const nextEvent = document.querySelector(".next-event");
+const latestArticle = document.querySelector(".latest-article");
 
-textShortener();
+// const wordsArray = mainParagraph.innerHTML.split(" ");
+// function textShortener() {
+//   if (wordsArray.length > 140) {
+//     mainParagraph.innerHTML =
+//       wordsArray.slice(0, 140).join(" ") + `<span class='read-more'>Read more</span>`;
+//   }
+// }
 
-function readMore() {
-  mainParagraph.innerHTML = wordsArray.join(" ") + `<span class='read-less'>Show less</span>`;
-}
+// textShortener();
+
+// function readMore() {
+//   mainParagraph.innerHTML = wordsArray.join(" ") + `<span class='read-less'>Show less</span>`;
+// }
 
 const nextEventImage = `url(/Events/images/Invite_28_August_2020.jpg)`;
 
@@ -42,6 +46,32 @@ function getNextEvent() {
 }
 
 getNextEvent();
+
+function getLatestArticle() {
+  const h2 = document.createElement("h2");
+  h2.textContent = "Latest Article";
+
+  const recentArticle = document.createElement("div");
+  recentArticle.classList.add("recent-article");
+
+  const img = document.createElement("img");
+  img.src = `./Articles/${articlesArray[0].image}`;
+  img.width = "50%";
+  img.alt = "Article image";
+
+  const link = document.createElement("a");
+  link.href = "/Articles/article.html";
+  link.textContent = articlesArray[0].title;
+
+  link.addEventListener("click", () => {
+    localStorage.setItem("current-article", JSON.stringify(articlesArray[0]));
+  });
+
+  recentArticle.append(img, link);
+  latestArticle.append(h2, recentArticle);
+}
+
+getLatestArticle();
 
 setInterval(() => {
   const showLess = document.querySelector(".read-less");

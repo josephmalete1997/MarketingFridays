@@ -1,3 +1,5 @@
+import { articlesArray } from "./article_object.js";
+
 const container = document.querySelector(".marketing-thoughts");
 const pagination = document.querySelector(".pagination");
 const currentPageDescription = document.querySelector(".pages-section p");
@@ -5,7 +7,7 @@ const currentPageDescription = document.querySelector(".pages-section p");
 const articlesPerPage = 4;
 const pages = {
   value: Math.ceil(articlesArray.length / articlesPerPage),
-  number: 1,
+  number: localStorage.getItem("page-no") || 1,
 };
 
 function renderArticles(page) {
@@ -78,14 +80,17 @@ function activePage() {
       clearActiveStatus();
       pageElement.classList.add("active-page");
       renderArticles(index + 1);
+      localStorage.setItem("page-no", index + 1);
     });
   });
 
   if (pageElements.length > 0) {
-    pageElements[0].classList.add("active-page");
-    renderArticles(1);
+    pageElements[pages.number - 1].classList.add("active-page");
+    renderArticles(pages.number);
   }
 }
+
+document.querySelectorAll(".page")[pages.number - 1];
 
 paginate();
 activePage();

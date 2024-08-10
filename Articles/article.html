@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../css/footer.css" />
     <link rel="stylesheet" href="./articles.css" />
     <link rel="stylesheet" href="../css/scroll_style.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
     <link rel="stylesheet" href="./Montserrat/static/Montserrat-ExtraLight.ttf" />
     <link rel="shortcut icon" href="../images/logo.png" />
     <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" /> -->
@@ -107,19 +108,33 @@
         font-family: Montserrat-Normal;
       }
       main p {
-        width: 90%;
+        width: 80%;
         font-family: Montserrat-light;
         font-size: 1.3em;
       }
 
       main p li {
         font-family: Montserrat-Light;
-        list-style: circle;
+        list-style: square;
       }
       .date-author {
         display: flex;
         font-size: 1.1em;
         text-align: left;
+      }
+      .comment {
+        background: #ffffff;
+        padding: 1em;
+        margin-top: 1em;
+        /* box-shadow: 2px 2px 5px rgba(160, 160, 160, 0.18); */
+        border: 0.01em solid #eeeeee;
+      }
+      @media screen and (max-width: 600px) {
+        main p {
+          width: 95%;
+          font-family: Montserrat-light;
+          font-size: 1.1em;
+        }
       }
     </style>
     <script src="svgs.js"></script>
@@ -132,10 +147,10 @@
       const comments = document.querySelector(".comments");
 
       const article = JSON.parse(localStorage.getItem("current-article"));
-      currentTitle.innerHTML = article.title;
+      currentTitle.innerHTML = `<a href="../Articles/"><img src="../icons/arrow-left.svg" width="30" /></a><br>${article.title}`;
       const newArticle = article.content.replace(/·/g, "<li>").replace(/\n\n/g, "<br><br>");
       content.innerHTML = newArticle;
-      dateAuthor.innerHTML = `${article.date} | By _<b>${article.author}</b>`;
+      dateAuthor.innerHTML = `${article.date}`;
       document.title = article.title;
 
       const userIcon = `
@@ -147,8 +162,6 @@
         commentDiv.innerHTML = `
         <h2>${userIcon} ${comment.name}</h2>
         <p>${comment.comment}</p>
-        <button class="reply button" >Reply</button>
-        <hr>
         `;
         comments.append(commentDiv);
       });

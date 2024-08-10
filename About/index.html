@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../css/footer.css" />
     <link rel="stylesheet" href="./about.css" />
     <link rel="stylesheet" href="../css/scroll_style.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
     <link rel="stylesheet" href="./Montserrat/static/Montserrat-ExtraLight.ttf" />
     <link rel="shortcut icon" href="../images/logo.png" />
     <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" /> -->
@@ -17,8 +18,13 @@
   </head>
   <body>
     <div class="over-layer"></div>
+    <div class="mobile-menu">
+      <img src="../icons/bars.svg" width="30" />
+      <p>About</p>
+    </div>
     <header>
       <div class="logo"></div>
+      <img src="../icons/times.svg" class="close-menu" />
       <div class="nav">
         <a href="../">Home</a>
         <a href="" class="active">About</a>
@@ -38,15 +44,15 @@
     <main>
       <h1>What is <b>Marketing Fridays ?</b></h1>
       <div class="text-image">
+        <div class="about-image"></div>
         <p>
           Marketing Fridays was launched in April 2018, to address a unique need for marketing
           professionals to learn from one another and get an opportunity to network. The reality is
           that there are not a lot of platforms for us to share ideas and just get to know each
           other within the industry. There has been a few movements that have really progressed over
           the last few years, but we need as many platforms and voices advocating for Marketing
-          excellence and for us to pay if forward as we broaden access to Marketing.
+          excellence and for us to pay it forward as we broaden access to Marketing.
         </p>
-        <div class="about-image"></div>
       </div>
       <p>
         Hence on the first Friday of every month, Marketing Fridays invites you to join other
@@ -108,5 +114,6 @@
     </script>
     <script src="svgs.js"></script>
     <script src="about.js"></script>
+    <script src="../js/menu.js"></script>
   </body>
 </html>

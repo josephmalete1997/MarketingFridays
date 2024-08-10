@@ -2,6 +2,10 @@ main h1 {
   margin-left: 1em;
 }
 
+main {
+  position: relative;
+}
+
 .marketing-thoughts {
   width: 100%;
   display: flex;
@@ -87,4 +91,10 @@ main h1 {
   width: 20.5%;
   margin-left: 80%;
   font-size: 1.1em;
+}
+
+.mobile-arrow {
+  position: absolute;
+  left: 2em;
+  top: 2em;
 }

@@ -163,3 +163,5 @@ Although the five points above might not be the silver bullet to living up to yo
 ];
 
 // console.log(JSON.stringify(articlesArray, null, 2));
+
+export { articlesArray };

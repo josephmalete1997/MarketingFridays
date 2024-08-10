@@ -1,4 +1,4 @@
-.home-p .next-event {
+.over-view {
   flex: 2;
   display: flex;
   flex-direction: column;
@@ -6,7 +6,38 @@
   background: white;
 }
 
-.home-p .next-event h2 {
+.latest-article {
+  height: 10em;
+  width: 100%;
+  margin-top: 0em;
+}
+
+.recent-article {
+  display: flex;
+}
+
+.recent-article a {
+  flex: 2;
+  font-size: 1.2em;
+  margin: 0.5em;
+  text-align: left;
+  text-decoration: none;
+  color: black;
+  font-family: Montserrat-normal;
+}
+
+.recent-article a:hover {
+  color: rgb(76, 76, 192);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.recent-article img {
+  flex: 1;
+  width: 10%;
+}
+
+.over-view .next-event h2 {
   margin: 0em;
   margin-bottom: 1em;
 }
@@ -16,9 +47,9 @@
   margin: 0em;
 }
 
-.next-event-image {
+.over-view .next-event-image {
+  height: 9em;
   flex: 1;
-  /* background-image: url(../displayImages/Invite+28+August+2020.jpg); */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -27,7 +58,7 @@
 .next-event-right {
   width: 5rem;
   height: 10rem;
-  flex: 1;
+  flex: 2;
   display: flex;
   flex-direction: column;
   margin: 0.5em;

@@ -8,8 +8,9 @@
   overflow-x: hidden;
   width: 90%;
   margin-left: 5%;
-  border-bottom: 0.1em solid;
+  /* border-bottom: 0.1em solid; */
   padding: 1em 0em;
+  background: linear-gradient(90deg, #ffffff, #f9f9f9, #ffffff);
 }
 
 .review {
@@ -25,7 +26,7 @@
 }
 
 .review-text p {
-  font-size: 1.5em;
+  font-size: 1.4em;
 }
 
 .rating {
@@ -35,6 +36,6 @@
 
 .reviews-dots {
   width: 100px;
-  height: 1em;
+  height: 0.5em;
   /* background: red; */
 }
