@@ -4,9 +4,10 @@ const { MongoClient, ServerApiVersion } = require("mongodb");
 const cors = require("cors");
 const app = express();
 const port = 3000; // Port number for your server
+require("dotenv").config();
 
 // Use environment variables for sensitive information
-const uri = process.env.MONGODB_URI || "your_mongodb_connection_string_here";
+const uri = process.env.MONGODB_URI;
 
 const client = new MongoClient(uri, {
   serverApi: {
@@ -23,10 +24,11 @@ app.use(express.json());
 app.get("/api/data", async (req, res) => {
   try {
     await client.connect();
-    const database = client.db("your_database_name");
-    const collection = database.collection("your_collection_name");
+    const database = client.db("MarketingFridaysDB");
+    const collection = database.collection("Articles");
     const data = await collection.find({}).toArray();
     res.json(data);
+    console.log(data);
   } catch (error) {
     res.status(500).send("Error retrieving data");
   } finally {
